@@ -1,7 +1,7 @@
 # Symb
 ### Ferramenta de Correção Automática de Exercícios utilizando Execução Simbólica (Teste)
 
-A ferramenta automática de exercício de programação introdutória denominada **Symb** tem o objetivo de auxiliar os docentes na avaliação, classificação e gerenciamento de exercícios de programação de computadores. 
+A ferramenta automática de exercício de programação introdutória denominada **Symb** tem o objetivo de auxiliar os docentes na correção e avaliação de exercícios de programação de computadores. 
 
 O diferencial da ferramenta, é que não se faz necessária a inserção de casos de teste manualmente por parte dos professores, pois utiliza-se a abordagem de correção através da análise estática de um programa de gabarito do professor para a geração de casos de teste automatizados e a correção utilizando Execução Simbólica. 
 
@@ -9,7 +9,7 @@ A técnica de Execução Simbólica visa explorar múltiplos fluxos de execuçã
 
 ## Instalação
 ### A) Windows  
-1) Baixe este projeto em sua máquina, e descompacte em algum diretório de sua preferência; 
+1) Baixe este projeto em sua máquina, e descompacte o diretório em algum diretório de sua preferência. O diretório raiz do projeto é: Symb-Autograder/symb; 
 2) Instale a versão mais recente do Java. [Link de instalação](https://www.java.com/pt-BR/download/manual.jsp)
 3) Instale a versão mais recente do Racket. [Link de instalação:](https://download.racket-lang.org/)
 4) Baixe o Z3 Theorem Prover: [Link de instalação](https://github.com/Z3Prover/z3/releases). Em "Assets" procure pela versão do Windows 32 ou 64 bits, baixe e descompate a pasta em C:/Arquivos de programas;
@@ -25,21 +25,22 @@ A técnica de Execução Simbólica visa explorar múltiplos fluxos de execuçã
 14) E por fim, clique no executável Symb.jar para executar o programa.
 
 ### B) Linux
-1) Baixe este projeto em sua máquina, e descompacte em algum diretório de sua preferência. Altere as permissões para leitura, execução e gravação; 
+1) Baixe este projeto em sua máquina, e descompacte em algum diretório de sua preferência. Altere as permissões para leitura, execução e gravação. O diretório raiz do projeto é: Symb-Autograder/symb; 
 2) Instale a versão mais recente do Java. Siga as orientações de instalação para Linux. [Link de instalação](https://www.java.com/pt-BR/download/manual.jsp)
 3) Instale a versão mais recente do Racket (8.3 ou superior). [Link de instalação:](https://download.racket-lang.org/) ou utilize o comando: 'apt-get install racket'
 4) Baixe o Z3 Theorem Prover: [Link de instalação](https://github.com/Z3Prover/z3/releases). Siga as orientações para a instalação, ou utilize o comando: 'apt-get install z3'
-5) Abra o terminal, vá até o diretório raiz do projeto, onde você descompactou (passo 1). Digite: `raco pkg install`
+5) Abra o terminal, vá até o diretório Symb-Autograder/symb. Digite: `raco pkg install`
 6) E por fim, clique no executável Symb.jar para executar o programa (Não esqueça de verificar as permissões do arquivo).
 
 ### C) Mac OS  
 Em breve!
 
 ## Limitações
+Em processo de implementação para a correção de exercícios com funções, estruturas de repetição, vetores e matrizes.
 
 ## Organização do projeto
 1) O projeto está divido em quatro módulos: raiz, especificacao, z3 e outz3
-2) Em seu diretório raiz, os arquivos interp.rkt, lexer.rkt, parser.rkt, syntax.rkt, reader.rkt e main.rkt, fazem parte da linguagem symb, que interpretará o programa.
+2) Em seu diretório raiz (symb), os arquivos interp.rkt, lexer.rkt, parser.rkt, syntax.rkt, reader.rkt e main.rkt, fazem parte da linguagem symb, que interpretará o programa.
 3) O arquivo Symb.java é o executável da ferramenta;
 4) O arquivo windows-bin.bat importa o módulo symb no racket para instalação via Windows
 5) O diretório especificacao possui os arquivos referente ao modulo de especificacao;
