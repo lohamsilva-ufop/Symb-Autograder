@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Symb
 ### Ferramenta de Correção Automática de Exercícios utilizando Execução Simbólica (Teste)
 
@@ -261,5 +260,3 @@ De posse do par (tabela de entradas x lista de saídas) do gabarito, `execution-
 ## Extensões para outras linguagens
 Há a implementação de um plugin para a linguagem Python. Para que outras linguagens sejam inseridas na ferramenta, basta que o parser utilize as funções da linguagem Symb ao gerar a árvore de syntaxe do programa. Vide o arquivo symb/syntax.rkt.
 =======
-Abra o diretório symb
->>>>>>> abd811f5050a62a53c6071afbf3dae8c837b4326
