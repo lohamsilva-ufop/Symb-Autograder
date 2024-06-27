@@ -46,7 +46,10 @@ Em processo de implementação para a correção de exercícios com funções, e
 5) O diretório especificacao possui os arquivos referente ao modulo de especificacao;
 6) O diretório z3 possui os arquivos referente ao modulo de z3 (geração de scripts);
 7) O diretório z3/outz3 possui os arquivos referente ao modulo de outz3;
-8) O diretório tests possui 21 exercícios de programação introdutória já testados. Possuem a localização do gabarito, um exercício correto e outro incorreto.
+8) O diretório case-study possui 36 exercícios de programação introdutória já testados. Possuem a localização do gabarito, um exercício correto e outro incorreto.
+
+## Como corrigir um programa ou gerar valores de teste automatizados?
+Basta executar o arquivo Symb.jar. Aproveite!!
 
 ## Como os módulos do programa funcionam?
 ### A) O início de tudo: O módulo especificacao - arquivo especificacao/controller.rkt
@@ -255,4 +258,4 @@ A função executa o programa recursivamente até que  `iteration` seja igual a 
 De posse do par (tabela de entradas x lista de saídas) do gabarito, `execution-controller` evoca a função `percorre-path-student`, na qual seus objetivos são descritos no item A) 7.
 
 ## Extensões para outras linguagens
-
+Há a implementação de um plugin para a linguagem Python. Para que outras linguagens sejam inseridas na ferramenta, basta que o parser utilize as funções da linguagem Symb ao gerar a árvore de syntaxe do programa. Vide o arquivo symb/syntax.rkt.
