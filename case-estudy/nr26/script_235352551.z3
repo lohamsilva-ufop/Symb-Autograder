@@ -1,0 +1,1 @@
+(declare-const idade Int)  (assert (and (not (and ( > idade 0)  ( <= idade 10))) (not (and ( > idade 10)  ( <= idade 29))) (not (and ( > idade 29)  ( <= idade 45))) (not (and ( > idade 45)  ( <= idade 59))) (not (and ( > idade 59)  ( <= idade 65))) (not (>= idade  65)) ))(check-sat) (get-model)

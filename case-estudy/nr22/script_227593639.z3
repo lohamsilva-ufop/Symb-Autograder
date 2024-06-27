@@ -1,0 +1,1 @@
+(declare-const saldomedio Int)  (assert (and (not (and ( >= saldomedio 0)  ( <= saldomedio 500))) (not (and ( >= saldomedio 501)  ( <= saldomedio 1000)))(not (and ( >= saldomedio 1001)  ( <= saldomedio 3000)))(>= saldomedio  3001)))(check-sat) (get-model)

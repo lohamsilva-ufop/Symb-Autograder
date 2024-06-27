@@ -1,0 +1,1 @@
+(declare-const A Int) (declare-const B Int) (declare-const C Int)  (assert (and (= ( + ( + A B) C)  180) (not (or ( or ( = A 90) ( = B 90))  ( = C 90)))(or ( or ( > A 90) ( > B 90))  ( > C 90))))(check-sat) (get-model)

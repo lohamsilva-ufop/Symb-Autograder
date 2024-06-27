@@ -1,0 +1,1 @@
+(declare-const freq Int) (declare-const nota Int)  (assert (and (and ( >= freq 75)  ( <= freq 100)) (not (< nota  3)) (not (and ( >= nota 3)  ( < nota 7))) (not (and ( >= nota 7)  ( <= nota 10))) ))(check-sat) (get-model)
