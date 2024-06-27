@@ -259,4 +259,4 @@ De posse do par (tabela de entradas x lista de saídas) do gabarito, `execution-
 
 ## Extensões para outras linguagens
 Há a implementação de um plugin para a linguagem Python. Para que outras linguagens sejam inseridas na ferramenta, basta que o parser utilize as funções da linguagem Symb ao gerar a árvore de syntaxe do programa. Vide o arquivo symb/syntax.rkt.
-=======
+
