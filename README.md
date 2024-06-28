@@ -258,5 +258,6 @@ A função executa o programa recursivamente até que  `iteration` seja igual a 
 De posse do par (tabela de entradas x lista de saídas) do gabarito, `execution-controller` evoca a função `percorre-path-student`, na qual seus objetivos são descritos no item A) 7.
 
 ## Extensões para outras linguagens
+
 Há a implementação de um plugin para a linguagem Python. Para que outras linguagens sejam inseridas na ferramenta, basta que o parser utilize as funções da linguagem Symb ao gerar a árvore de syntaxe do programa. Vide o arquivo symb/syntax.rkt.
 
