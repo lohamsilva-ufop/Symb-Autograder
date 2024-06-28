@@ -7,6 +7,8 @@ O diferencial da ferramenta, é que não se faz necessária a inserção de caso
 
 A técnica de Execução Simbólica visa explorar múltiplos fluxos de execução de um programa, que pode auxiliar na verificação de propriedades a serem atestadas na correção de exercícios. Com a ferramenta, o professor somente indica a localização de seu gabarito, o diretório que contém os exercícios dos alunos e a quantidade de execuções, pretendo-se simplificar o trabalho do docente para elaborar exercícios e feedback rápido sobre suas possíveis soluções para exercícios propostos. 
 
+Foi realizado um estudo de caso com a ferramenta proposta, com o objetivo de verificar se os casos de teste foram gerados adequadamente e se o processo de correção foi efetivo. Acesse o diretório `case-study` para visualizar. Esse estudo envolveu a codificação de 36 questões de uma lista de exercícios de programação introdutória, de uma Univesidade Brasileira, com o tópico de Estrutura de Condição, executado em um computador com processador Intel Core i7-10510U CPU @ 1.80GHz, 2.30 GHz- 64 bits, com 8 GB de memória, Sistema Operacional Windows 11. Programas instalados: Racket versão 8.3, Z3 versão 4.12.6 e Java 8 Update 411.  
+
 ## Instalação
 ### A) Windows  
 1) Baixe este projeto em sua máquina, e descompacte o diretório em algum diretório de sua preferência. O diretório raiz do projeto é: Symb-Autograder/symb; 
