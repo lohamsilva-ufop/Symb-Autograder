@@ -28,7 +28,8 @@
                [(IF expr THEN block ELSE block) (eif $2 $4 $6)]
                [(WHILE expr DO block) (ewhile $2 $4)]
                [(FOR init TO expr DO block) (efor $2 $4 $6)]
-               [(INPUT IDENTIFIER SEMI) (input (evar $2))])
+               [(INPUT IDENTIFIER SEMI) (input (evar $2))]
+               [(type INPUT IDENTIFIER SEMI) (input-with-type $1 (evar $3))])
     (init [(IDENTIFIER ASSIGN expr) (eassign (evar $1) $3)])
     (block [(BEGIN statements END) $2])
     (expr  [(NUMBER) (value $1)]
@@ -49,7 +50,11 @@
            [(expr AND expr) (eand $1 $3)]
            [(expr OR expr) (eor $1 $3)]
            [(NOT expr) (enot $2)]
-           [(LPAREN expr RPAREN) $2]))))
+           [(LPAREN expr RPAREN) $2])
+     (type [(INT) (value "int")]
+           [(FLOAT) (value "float")]
+           [(DOUBLE) (value "double")]
+           [(BOOLEAN) (value "boolean")]))))
 
 (define (parse ip)
   (imp-parser (lambda () (next-token ip))))
